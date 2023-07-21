@@ -39,7 +39,10 @@ export function Editor() {
       }),
       Image.configure({
         inline: true,
-        allowBase64: false,
+        HTMLAttributes: {
+          class: "w-full h-auto",
+        },
+        allowBase64: true,
       }),
       Color.configure({
         types: ["textStyle"],
